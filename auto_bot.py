@@ -1,11 +1,11 @@
-import time
+import os
 import pandas as pd
 import requests
 import yfinance as yf
 
 # ==================== टेलीग्राम सेटिंग्स ====================
-TELEGRAM_BOT_TOKEN = "8376242264:AAF8eGE1WiPXdlG1NN9jEfnJ41n7l3fuL74"  # अपना बोट टोकन यहाँ डालें
-CHAT_ID = "1626240174"  # अपनी चैट आईडी यहाँ डालें
+TELEGRAM_BOT_TOKEN = os.getenv("8376242264:AAF8eGE1WiPXdlG1NN9jEfnJ41n7l3fuL74")
+CHAT_ID = os.getenv("1626240174")
 
 
 def send_telegram_alert(message):
